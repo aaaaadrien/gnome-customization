@@ -9,10 +9,11 @@ echo " - Détacher les popups des fenêtres"
 gsettings set org.gnome.mutter attach-modal-dialogs false
 echo " - Affichage du calendrier dans le panneau supérieur"
 gsettings set org.gnome.desktop.calendar show-weekdate true
-echo " - Modification du format de la date"
+echo " - Modification du format de la date et heure"
 gsettings set org.gnome.desktop.interface clock-show-date true
 gsettings set org.gnome.desktop.interface clock-show-seconds true
 gsettings set org.gnome.desktop.interface clock-show-weekday true
+gsettings set org.gnome.desktop.interface clock-format 12h
 #echo " - Localisation du pointeur via CTRL"
 #gsettings set org.gnome.desktop.interface locate-pointer true #BUG de FOCUS avec GIMP
 echo " - Paramétrage Touch Pad"
