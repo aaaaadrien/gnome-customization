@@ -56,6 +56,10 @@ gsettings set org.gnome.software show-only-free-apps false
 #echo " - Autorisation de la mise à niveau vers des versions BETA"
 #gsettings set org.gnome.software show-upgrade-prerelease false
 
+echo "Configuration de GNOME Text Editor"
+gsettings set org.gnome.TextEditor highlight-current-line false
+gsettings set org.gnome.TextEditor restore-session false
+gsettings set org.gnome.TextEditor show-line-numbers true
 
 echo "Personnalisation de Dash-to-dock"
 echo " - Activation de l'extension"
