@@ -48,6 +48,15 @@ echo " - Modification de l ordre de tri"
 gsettings set org.gtk.Settings.FileChooser sort-directories-first true
 gsettings set org.gtk.gtk4.Settings.FileChooser sort-directories-first true
 
+echo "Configuration de GNOME Logiciels"
+echo " - Désactivation du téléchargement automatique des mises à jour"
+gsettings set org.gnome.software download-updates false
+echo " - Activation de l'affichage des logiciels propriétaires"
+gsettings set org.gnome.software show-only-free-apps false
+#echo " - Autorisation de la mise à niveau vers des versions BETA"
+#gsettings set org.gnome.software show-upgrade-prerelease false
+
+
 echo "Personnalisation de Dash-to-dock"
 echo " - Activation de l'extension"
 gnome-shell-extension-tool -e dash-to-dock@micxgx.gmail.com
