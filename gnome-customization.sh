@@ -61,6 +61,12 @@ gsettings set org.gnome.TextEditor highlight-current-line false
 gsettings set org.gnome.TextEditor restore-session false
 gsettings set org.gnome.TextEditor show-line-numbers true
 
+echo "Configuration de GNOME Web"
+gsettings set org.gnome.Epiphany ask-for-default false
+gsettings set org.gnome.Epiphany homepage-url 'about:blank'
+gsettings set org.gnome.Epiphany start-in-incognito-mode true
+
+
 echo "Personnalisation de Dash-to-dock"
 echo " - Activation de l'extension"
 gnome-shell-extension-tool -e dash-to-dock@micxgx.gmail.com
