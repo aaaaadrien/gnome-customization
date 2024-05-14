@@ -37,7 +37,7 @@ gsettings set org.gnome.desktop.privacy send-software-usage-stats false
 echo "Personnalisation de GNOME"
 echo " - Application du thème sombre"
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
-gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
+gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3-dark'
 
 echo "Configuration Nautilus"
 echo " - Désactivation de l ouverture du dossier lorsqu un élément est glissé dedans"
