@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# Tester si root
+if [[ $(id -u) -eq "0" ]]
+then
+	echo -e "\033[31mATTENTION\033[0m Si vous lancez ce script en root, cela personnalisera la session GNOME de root !"
+	echo "Poursuite du script dans 10 secondes..."
+	sleep 10
+fi
+
 echo "Configuration générale de GNOME"
 echo " - Boutons de fenêtre"
 gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
