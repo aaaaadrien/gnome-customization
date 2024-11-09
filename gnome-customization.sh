@@ -74,6 +74,10 @@ gsettings set org.gnome.Epiphany ask-for-default false
 gsettings set org.gnome.Epiphany homepage-url 'about:blank'
 gsettings set org.gnome.Epiphany start-in-incognito-mode true
 
+echo "Configuration de Ptyxis"
+gsettints set org.gnome.Ptyxis use-system-font false
+gsettings set org.gnome.Ptyxis font-name 'Monospace 14'
+gsettings set org.gnome.Ptyxis restore-session false
 
 echo "Personnalisation de Dash-to-dock"
 echo " - Activation de l'extension"
