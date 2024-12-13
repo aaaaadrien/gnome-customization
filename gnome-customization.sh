@@ -79,9 +79,22 @@ gsettings set org.gnome.Ptyxis use-system-font false
 gsettings set org.gnome.Ptyxis font-name 'Monospace 14'
 gsettings set org.gnome.Ptyxis restore-session false
 
+echo "Application des fonts Red Hat"
+if rpm -q redhat-mono-fonts &> /dev/null
+then
+	gsettings set org.gnome.Ptyxis font-name 'Red Hat Mono Regular 14' 
+fi
+
+if rpm -q redhat-text-fonts &> /dev/null
+then
+	gsettings set org.gnome.desktop.interface font-name 'Red Hat Text Regular 11'
+	gsettings set org.gnome.desktop.interface font-name 'Red Hat Text Regular 11'
+	gsettings set org.gnome.desktop.interface monospace-font-name 'Red Hat Mono Regular 10'
+fi
+
 echo "Personnalisation de Dash-to-dock"
 echo " - Activation de l'extension"
-gnome-shell-extension-tool -e dash-to-dock@micxgx.gmail.com
+gnome-extensions enable dash-to-dock@micxgx.gmail.com
 echo " - Placement en bas, fixé et masquage intelligent"
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-position "BOTTOM"
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed false
@@ -90,6 +103,6 @@ echo " - Correction du bug de la double lettre"
 gsettings set org.gnome.shell.extensions.dash-to-dock disable-overview-on-startup true
 
 echo "Activation de Appindicator"
-gnome-shell-extension-tool -e appindicatorsupport@rgcjonas.gmail.com
+gnome-extensions enable appindicatorsupport@rgcjonas.gmail.com
 
 echo "Personnalisation terminée."
