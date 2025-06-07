@@ -29,6 +29,8 @@ gsettings set org.gnome.desktop.peripherals.touchpad disable-while-typing true
 gsettings set org.gnome.desktop.peripherals.touchpad click-method "areas"
 echo " - Désactivation des sons système"
 gsettings set org.gnome.desktop.wm.preferences audible-bell false
+echo " - Timeout des applications en attente de réponse à 60s"
+gsettings set org.gnome.mutter check-alive-timeout 60000
 echo " - Activation du mode nuit"
 gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
 echo " - Epuration des fichiers temporaires et de la corbeille de plus de 30 jours"
