@@ -50,6 +50,9 @@ gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3-dark'
 
 echo "Configuration Nautilus"
+echo " - Vue liste et activation du mode tree"
+gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
+gsettings set org.gnome.nautilus.list-view use-tree-view true
 echo " - Désactivation de l ouverture du dossier lorsqu un élément est glissé dedans"
 gsettings set org.gnome.nautilus.preferences open-folder-on-dnd-hover false
 echo " - Activation du double clic"
