@@ -93,7 +93,6 @@ fi
 if rpm -q redhat-text-fonts &> /dev/null
 then
 	gsettings set org.gnome.desktop.interface font-name 'Red Hat Text Regular 11'
-	gsettings set org.gnome.desktop.interface font-name 'Red Hat Text Regular 11'
 	gsettings set org.gnome.desktop.interface monospace-font-name 'Red Hat Mono Regular 10'
 fi
 
