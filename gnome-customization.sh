@@ -22,8 +22,8 @@ gsettings set org.gnome.desktop.interface clock-show-date true
 gsettings set org.gnome.desktop.interface clock-show-seconds true
 gsettings set org.gnome.desktop.interface clock-show-weekday true
 gsettings set org.gnome.desktop.interface clock-format 12h
-#echo " - Localisation du pointeur via CTRL"
-#gsettings set org.gnome.desktop.interface locate-pointer true #BUG de FOCUS avec GIMP
+echo " - Localisation du pointeur via CTRL"
+gsettings set org.gnome.desktop.interface locate-pointer true
 echo " - Paramétrage Touch Pad"
 gsettings set org.gnome.desktop.peripherals.touchpad disable-while-typing true
 gsettings set org.gnome.desktop.peripherals.touchpad click-method "areas"
@@ -53,6 +53,7 @@ echo "Configuration Nautilus"
 echo " - Vue liste et activation du mode tree"
 gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
 gsettings set org.gnome.nautilus.list-view use-tree-view true
+gsettings set org.gnome.nautilus.list-view default-zoom-level = 'small'
 echo " - Désactivation de l ouverture du dossier lorsqu un élément est glissé dedans"
 gsettings set org.gnome.nautilus.preferences open-folder-on-dnd-hover false
 echo " - Activation du double clic"
