@@ -37,6 +37,8 @@ echo " - Epuration des fichiers temporaires et de la corbeille de plus de 30 jou
 gsettings set org.gnome.desktop.privacy remove-old-temp-files true
 gsettings set org.gnome.desktop.privacy remove-old-trash-files true
 gsettings set org.gnome.desktop.privacy old-files-age "30"
+echo " - Activation Clic-Molette"
+gsettings set org.gnome.desktop.interface gtk-enable-primary-paste true
 
 echo "Confidentialité de GNOME"
 echo " - Désactivation de l'envoi des rapports"
